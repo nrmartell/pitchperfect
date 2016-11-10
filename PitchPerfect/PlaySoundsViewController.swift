@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class PlaySoundsViewController: UIViewController {
     
@@ -18,8 +19,8 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var reverbButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
-    var recordedAudioURL:URL!
-    var audioFile:AVAudioFile
+//    var recordedAudioURL:URL!
+    var audioFile:AVAudioFile!
     var audioEngine:AVAudioEngine!
     var audioPlayerNode: AVAudioPlayerNode!
     var stopTimer: Timer!
@@ -32,9 +33,9 @@ class PlaySoundsViewController: UIViewController {
         print("Play Sound Button Pressed")
         switch ButtonType(rawValue: sender.tag)! {
         case .slow:
-            playSound(0.5)
+            playSound(rate: 0.5)
         case .fast:
-            playSound(1.5)
+            playSound(rate: 1.5)
         case .chipmunk:
             playSound(pitch: 1000)
         case .vader:
