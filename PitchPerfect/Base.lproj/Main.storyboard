@@ -40,7 +40,7 @@
                                 <state key="normal" image="stopRecordingButton"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ZF-Qk-iI1"/>
-                                    <segue destination="ARH-d0-6oY" kind="show" id="u4r-qB-sLa"/>
+                                    <segue destination="ARH-d0-6oY" kind="show" id="TwX-d4-r6H"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -87,16 +87,14 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="171.5" height="151"/>
                                                 <state key="normal" title="SnailButton" image="SnailButton"/>
                                                 <connections>
-                                                    <action selector="playSoundForButton:" destination="ARH-d0-6oY" eventType="touchUpInside" id="GjG-s8-Zyh"/>
-                                                    <action selector="playSoundForButtonWithSender:" destination="ARH-d0-6oY" eventType="touchUpInside" id="M8C-rY-uMW"/>
+                                                    <action selector="playSoundForButton:" destination="ARH-d0-6oY" eventType="touchUpInside" id="jpR-GZ-rkC"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fY-6T-llX">
                                                 <rect key="frame" x="171.5" y="0.0" width="171.5" height="151"/>
                                                 <state key="normal" title="RabbitButton" image="RabbitButton"/>
                                                 <connections>
-                                                    <action selector="playSoundForButton:" destination="ARH-d0-6oY" eventType="touchUpInside" id="ZNR-sW-ell"/>
-                                                    <action selector="playSoundForButtonWithSender:" destination="ARH-d0-6oY" eventType="touchUpInside" id="2ey-jE-Cqy"/>
+                                                    <action selector="playSoundForButton:" destination="ARH-d0-6oY" eventType="touchUpInside" id="H94-NB-26f"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -108,16 +106,14 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="171.5" height="150.5"/>
                                                 <state key="normal" title="ChipmunkButton" image="ChipmunkButton"/>
                                                 <connections>
-                                                    <action selector="playSoundForButton:" destination="ARH-d0-6oY" eventType="touchUpInside" id="MEW-m6-j4h"/>
-                                                    <action selector="playSoundForButtonWithSender:" destination="ARH-d0-6oY" eventType="touchUpInside" id="jVE-yb-GYL"/>
+                                                    <action selector="playSoundForButton:" destination="ARH-d0-6oY" eventType="touchUpInside" id="tEH-Ge-vSK"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pH-pT-duX">
                                                 <rect key="frame" x="171.5" y="0.0" width="171.5" height="150.5"/>
                                                 <state key="normal" title="DarthVaderButton" image="DarthVaderButton"/>
                                                 <connections>
-                                                    <action selector="playSoundForButton:" destination="ARH-d0-6oY" eventType="touchUpInside" id="IS8-Ao-k4f"/>
-                                                    <action selector="playSoundForButtonWithSender:" destination="ARH-d0-6oY" eventType="touchUpInside" id="7nO-xH-6UA"/>
+                                                    <action selector="playSoundForButton:" destination="ARH-d0-6oY" eventType="touchUpInside" id="LHq-Ae-eot"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -129,16 +125,14 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="171.5" height="151"/>
                                                 <state key="normal" title="EchoButton" image="EchoButton"/>
                                                 <connections>
-                                                    <action selector="playSoundForButton:" destination="ARH-d0-6oY" eventType="touchUpInside" id="xXP-t8-wUl"/>
-                                                    <action selector="playSoundForButtonWithSender:" destination="ARH-d0-6oY" eventType="touchUpInside" id="hyo-Jk-Sf2"/>
+                                                    <action selector="playSoundForButton:" destination="ARH-d0-6oY" eventType="touchUpInside" id="BaL-xL-RVZ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ap0-Hd-Owu">
                                                 <rect key="frame" x="171.5" y="0.0" width="171.5" height="151"/>
                                                 <state key="normal" title="ReverbButton" image="ReverbButton"/>
                                                 <connections>
-                                                    <action selector="playSoundForButton:" destination="ARH-d0-6oY" eventType="touchUpInside" id="Lat-tv-Ywp"/>
-                                                    <action selector="playSoundForButtonWithSender:" destination="ARH-d0-6oY" eventType="touchUpInside" id="rvY-3A-L0w"/>
+                                                    <action selector="playSoundForButton:" destination="ARH-d0-6oY" eventType="touchUpInside" id="8ko-bC-htF"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -153,8 +147,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="150.5"/>
                                                         <state key="normal" title="StopButton" image="StopButton"/>
                                                         <connections>
-                                                            <action selector="stopButtonPressed:" destination="ARH-d0-6oY" eventType="touchUpInside" id="Lh9-MM-Wpc"/>
-                                                            <action selector="stopButtonPressedWithSender:" destination="ARH-d0-6oY" eventType="touchUpInside" id="4Y4-Re-YjW"/>
+                                                            <action selector="stopButtonPressed:" destination="ARH-d0-6oY" eventType="touchUpInside" id="xb7-dy-d2L"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -173,13 +166,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="chipmunkButton" destination="1AL-e2-a9v" id="sPD-QE-2Eh"/>
-                        <outlet property="echoButton" destination="88N-TF-DZe" id="jEb-YH-98W"/>
-                        <outlet property="rabbitButton" destination="1fY-6T-llX" id="qlt-0b-ef9"/>
-                        <outlet property="reverbButton" destination="Ap0-Hd-Owu" id="zZy-cR-YxC"/>
-                        <outlet property="snailButton" destination="GnF-C6-W1N" id="nrZ-sG-1hU"/>
-                        <outlet property="stopButton" destination="lZH-IJ-Ulx" id="EHC-X6-BHQ"/>
-                        <outlet property="vaderButton" destination="7pH-pT-duX" id="uI8-aq-6kT"/>
+                        <outlet property="chipmunkButton" destination="1AL-e2-a9v" id="PXa-08-Ajl"/>
+                        <outlet property="echoButton" destination="88N-TF-DZe" id="FwU-mZ-pWa"/>
+                        <outlet property="rabbitButton" destination="1fY-6T-llX" id="Ku0-Bt-4pu"/>
+                        <outlet property="reverbButton" destination="Ap0-Hd-Owu" id="6q3-pU-VaQ"/>
+                        <outlet property="snailButton" destination="GnF-C6-W1N" id="1wm-4q-33X"/>
+                        <outlet property="stopButton" destination="lZH-IJ-Ulx" id="Gnx-jn-Kn3"/>
+                        <outlet property="vaderButton" destination="7pH-pT-duX" id="4oF-ZG-Qpw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XBo-cH-CEo" userLabel="First Responder" sceneMemberID="firstResponder"/>

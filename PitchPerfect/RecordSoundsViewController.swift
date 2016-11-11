@@ -37,21 +37,28 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate{
         stopRecordingButton.isEnabled = true
         recordButton.isEnabled = false
         
-        let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
+
         
         let recordingName = "recordedVoice.wav"
-        let pathArray = [dirPath, recordingName]
-        let filePath = NSURL.fileURL(withPathComponents: pathArray)
-        print(filePath!)
-        
+        let dirPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+        let filePath = URL(fileURLWithPath: recordingName, relativeTo: dirPath)
         let session = AVAudioSession.sharedInstance()
         try! session.setCategory(AVAudioSessionCategoryPlayAndRecord)
         
-        try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
+        do {
+            audioRecorder = try AVAudioRecorder(url: filePath, settings: [String: AnyObject]())
+        } catch let error {
+            audioRecorder = nil
+            print("error setting up Audio Recorder: \(error.localizedDescription)")
+            return
+        }
+//      try! audioRecorder = AVAudioRecorder(url: filePath, settings: [:])
         audioRecorder.delegate = self
         audioRecorder.isMeteringEnabled = true
         audioRecorder.prepareToRecord()
         audioRecorder.record()
+        
+        
     }
    
     @IBAction func stopRecording(_ sender: Any) {

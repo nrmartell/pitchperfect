@@ -1,3 +1,4 @@
+
 //
 //  PlaySoundsViewController+Audio.swift
 //  PitchPerfect
@@ -41,6 +42,8 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
             showAlert(Alerts.AudioFileError, message: String(describing: error))
         }
     }
+
+    
     
     func playSound(rate: Float? = nil, pitch: Float? = nil, echo: Bool = false, reverb: Bool = false) {
         

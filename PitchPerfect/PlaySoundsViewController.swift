@@ -19,7 +19,7 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var reverbButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
-//    var recordedAudioURL:URL!
+    var recordedAudioURL:NSURL!
     var audioFile:AVAudioFile!
     var audioEngine:AVAudioEngine!
     var audioPlayerNode: AVAudioPlayerNode!
@@ -53,7 +53,7 @@ class PlaySoundsViewController: UIViewController {
         stopAudio()
     }
     
-    var recordedAudioURL: NSURL!
+    var recordedAudio: NSURL!
 
     override func viewDidLoad() {
         super.viewDidLoad()
