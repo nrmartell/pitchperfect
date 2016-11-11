@@ -45,13 +45,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate{
         let session = AVAudioSession.sharedInstance()
         try! session.setCategory(AVAudioSessionCategoryPlayAndRecord)
         
-//        do {
-//            audioRecorder = try AVAudioRecorder(url: filePath, settings: [String: AnyObject]())
-//        } catch let error {
-//            audioRecorder = nil
-//            print("error setting up Audio Recorder: \(error.localizedDescription)")
-//            return
-//        }
+
    try! audioRecorder = AVAudioRecorder(url: filePath, settings: [:])
         audioRecorder.delegate = self
         audioRecorder.isMeteringEnabled = true
