@@ -1,3 +1,4 @@
+
 //
 //  PlaySoundsViewController.swift
 //  PitchPerfect
@@ -24,7 +25,7 @@ class PlaySoundsViewController: UIViewController {
     var audioEngine:AVAudioEngine!
     var audioPlayerNode: AVAudioPlayerNode!
     var stopTimer: Timer!
-    
+        
     enum ButtonType: Int {
         case slow = 0, fast, chipmunk, vader, echo, reverb
     }
@@ -46,6 +47,7 @@ class PlaySoundsViewController: UIViewController {
             playSound(reverb: true)
         }
         configureUI(.playing)
+
     }
     
     @IBAction func stopButtonPressed(_ sender: AnyObject) {
